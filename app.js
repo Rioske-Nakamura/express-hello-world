@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 
 
-app.use(express.static(path.join(__dirname, "html")));
+
 
 app.get("/", (req, res) => res.type('html').send(html));
 
@@ -15,10 +15,11 @@ app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
 })
+app.get('/tico', (req, res) => {
+    console.log("Just got a request!")
+    res.send('teco!')
+})
 
-app.get("/tico", (req, res) => {
-  res.sendFile(path.join(__dirname, "html", "tico.html"));
-});
 
 app.get('/meunome', (req, res) => {
   console.log("Just got a request!")
