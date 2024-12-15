@@ -11,6 +11,10 @@ app.get('/req', (req, res) => {
     console.log("Just got a request!")
     res.send('Yo!')
 })
+app.get('/tico', (req, res) => {
+    console.log("Just got a request!")
+    res.send('html/tico.html')
+})
 
 app.get('/meunome', (req, res) => {
   console.log("Just got a request!")
