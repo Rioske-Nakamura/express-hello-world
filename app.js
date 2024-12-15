@@ -13,7 +13,7 @@ app.get('/req', (req, res) => {
 })
 app.get('/tico', (req, res) => {
     console.log("Just got a request!")
-    res.send('html/tico.html')
+    res.send('tico')
 })
 
 app.get('/meunome', (req, res) => {
